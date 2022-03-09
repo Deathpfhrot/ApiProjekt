@@ -16,7 +16,7 @@ const NewsCard = () => {
 
         console.log('newType wurde neu gerendert');
 
-        fetch(`https://newsapi.org/v2/everything?q=${newType}&language=${lang}&apiKey=33957bdcbea740f8ab8092438e8b380e`)
+        fetch(`https://newsapi.org/v2/everything?q=${newType}&language=de&apiKey=33957bdcbea740f8ab8092438e8b380e`)
             .then(response => response.json())
             .then(json =>{
                 if(loaded){
@@ -50,7 +50,7 @@ const NewsCard = () => {
             return (
             <article>
                 <div>
-                    <img src={items.urlToImage} alt="picture" />
+                    <img src={items.urlToImage} alt="randome mood" />
                 </div>
                 <h1>{items.title}</h1>
                 <p>{items.description}</p>
