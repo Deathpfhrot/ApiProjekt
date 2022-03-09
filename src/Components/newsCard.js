@@ -38,7 +38,7 @@ const NewsCard = () => {
                 <button onClick={() => setNewType ('tesla')}>Tesla</button>
                 {/* <button onClick={() => setNewType ('domains=wsj.com')}>Domains</button> */}
                 <button onClick={() => setNewType ('apple')}>Appel</button>
-                <select name="" id="" onChange={() => setNewLang()}>
+                <select name="" id="">
                     <option value="de">Deutsch</option>
                     <option value="en">Englisch</option>
                     <option value="fr">Französisch</option>
