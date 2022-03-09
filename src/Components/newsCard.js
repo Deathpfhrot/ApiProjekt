@@ -8,7 +8,7 @@ const NewsCard = () => {
 
     const[jsonArr, setJsonArr] = useState([]) // warum leeres array?
 
-    const[lang, setNewLang] = useState('de')
+    // const[lang, setNewLang] = useState('de')
 
 
     useEffect(() =>{
