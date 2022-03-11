@@ -9,6 +9,8 @@ const NewsCard = () => {
 
     const[jsonArr, setJsonArr] = useState([]) // warum leeres array?
 
+    const[title, setTitle] = useState('')
+
     const[lang, setNewLang] = useState('de')
     const handlechange = (newValues) => {
         setNewLang(newValues)
@@ -36,7 +38,6 @@ const NewsCard = () => {
             }
     }, [newType, lang])
 
-
     return(
         <>
             <div id="div1">
@@ -48,6 +49,12 @@ const NewsCard = () => {
                     <option value="en">Englisch</option>
                     <option value="fr">Französisch</option>
                 </select>
+                <input type="text" name="" id="" onChange={(e) => setTitle(e.target.value)} />
+
+                <button onClick={() => setNewType (title)}>Search</button>
+
+
+
             </div>
         
         <div id="div2">
